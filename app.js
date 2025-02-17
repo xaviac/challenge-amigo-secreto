@@ -38,27 +38,16 @@ function mostrarAmigos() {
     lista.innerHTML = '';
 
     // Iteramos sobre el array de amigos
-    // for (let i = 0; i < amigos.length; i++) {
-    //     // Creamos un nuevo elemento 'li' para cada amigo
-    //     let li = document.createElement('li');
-        
-    //     // Establecemos el texto del 'li' como el nombre del amigo
-    //     li.textContent = amigos[i];
-        
-    //     // Agregamos el 'li' a la lista
-    //     lista.appendChild(li);
-    // }
-    // // Iteramos sobre el array de amigos
-    amigos.forEach(amigo => {
+    for (let i = 0; i < amigos.length; i++) {
         // Creamos un nuevo elemento 'li' para cada amigo
         let li = document.createElement('li');
         
         // Establecemos el texto del 'li' como el nombre del amigo
-        li.textContent = amigo;
+        li.textContent = amigos[i];
         
         // Agregamos el 'li' a la lista
         lista.appendChild(li);
-    });
+    }
 }
 
 // Función para obtener un amigo al azar
